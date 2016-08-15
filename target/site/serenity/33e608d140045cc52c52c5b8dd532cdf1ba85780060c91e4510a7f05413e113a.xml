@@ -1,0 +1,119 @@
+<acceptance-test-run title="As an user I should be able click on the tooltip button under widget&#xd;&amp;#10;and check for the tooltip text." name="As an user I should be able click on the tooltip button under widget&#xd;&#xa;and check for the tooltip text." steps="8" successful="7" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="25386" timestamp="2016-08-11T20:59:24.097-05:00" session-id="c6b74c3125b90353ee04bb45b75610c1">
+  <user-story id="TooltipTest" name="Tooltip test" path="stories/demoQa/TooltipTest.story"/>
+  <tags>
+    <tag name="Demo qa" type="feature"/>
+    <tag name="Demo qa/Tooltip test" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>text</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>We ask for your age only for statistical purposes.</value>
+      </row>
+      <row result="FAILURE">
+        <value>This should fail the test, just to see what happens</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {text=We ask for your age only for statistical purposes.}" result="SUCCESS">
+    <test-group name="Given i am able to get into demoQa site" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="10436">
+        <screenshots>
+          <screenshot image="94b3aab512e7844865ce92a07852ba3d.png"/>
+        </screenshots>
+        <description>Open the home page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="982">
+        <screenshots>
+          <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+        </screenshots>
+        <description>Validate i  am  on  home  page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I click on the tooltip button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+        <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2856">
+        <screenshots>
+          <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+          <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+        </screenshots>
+        <description>Click  on  tooltip</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should be able to verify the tooltip text is{We ask for your age only for statistical purposes.}" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1495">
+        <screenshots>
+          <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+          <screenshot image="7373e3cdd0ecf6063d97d04d119e97dd.png"/>
+        </screenshots>
+        <description>Verify correctness of tooltip text: We ask for your age only for statistical purposes.</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {text=This should fail the test, just to see what happens}" result="FAILURE">
+    <screenshots>
+      <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+    </screenshots>
+    <test-group name="Given i am able to get into demoQa site" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+        <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1569">
+        <screenshots>
+          <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+          <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+        </screenshots>
+        <description>Open the home page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="758">
+        <screenshots>
+          <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+        </screenshots>
+        <description>Validate i  am  on  home  page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I click on the tooltip button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+        <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1540">
+        <screenshots>
+          <screenshot image="2712a82c2ce2a57deeb703d9d4fa2c98.png"/>
+          <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+        </screenshots>
+        <description>Click  on  tooltip</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should be able to verify the tooltip text is｟This should fail the test, just to see what happens｠" result="FAILURE">
+      <screenshots>
+        <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+      </screenshots>
+      <test-step result="FAILURE" duration="1729">
+        <screenshots>
+          <screenshot image="5e615995ba3fbd89aa90550cf9571d4a.png"/>
+          <screenshot image="74fe8f1da8b72a352988f69b8d6082a7.png" source="pagesource6689440728703670022.html.txt"/>
+        </screenshots>
+        <description>Verify correctness of tooltip text: This should fail the test, just to see what happens</description>
+        <error>java.lang.AssertionError</error>
+        <exception>java.lang.AssertionError:null&#xd;
+[test.jbehave.pages.TooltipPage.validateCorrectesnessOfTooltip(TooltipPage.java:27), test.jbehave.steps.serenity.DemoQaProcessingSteps.verifyCorrectnessOfTooltipText(DemoQaProcessingSteps.java:68), test.jbehave.steps.TooltipJBehave_Steps.thenIShouldBeAbleToVerifyTheTooltipTextIstext(TooltipJBehave_Steps.java:26)]</exception>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>
