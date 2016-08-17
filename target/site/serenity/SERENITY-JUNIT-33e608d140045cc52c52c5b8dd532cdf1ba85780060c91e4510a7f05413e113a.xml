@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Tooltip test" skipped="0" tests="2" time="25.39" timestamp="2016-08-224 08:59:24"><testcase name="As an user I should be able click on the tooltip button under widget&#13;&#10;and check for the tooltip text."><failure type="java.lang.AssertionError"/><system-err>null&#13;
-test.jbehave.pages.TooltipPage.validateCorrectesnessOfTooltip(TooltipPage.java:27)&#13;
-test.jbehave.steps.serenity.DemoQaProcessingSteps.verifyCorrectnessOfTooltipText(DemoQaProcessingSteps.java:68)&#13;
-test.jbehave.steps.TooltipJBehave_Steps.thenIShouldBeAbleToVerifyTheTooltipTextIstext(TooltipJBehave_Steps.java:26)&#13;
-</system-err></testcase></testsuite>
