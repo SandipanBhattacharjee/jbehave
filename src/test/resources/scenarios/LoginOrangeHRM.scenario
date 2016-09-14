@@ -1,0 +1,10 @@
+Scenario: Login into OrangeHRM page
+
+Meta: @id1 scenario1
+
+Given the user is on the OrangeHRM page
+When user enters username as <userName>
+When user enters password as <passWord>
+When user clicks on Login button
+Then user should land on Dashboard page
+

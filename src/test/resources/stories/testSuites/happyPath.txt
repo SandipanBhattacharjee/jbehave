@@ -1,3 +1,1 @@
-LaunchdemoQa.story
-LookupADefinition.story
-TooltipTest.story
+orange_hrm.story

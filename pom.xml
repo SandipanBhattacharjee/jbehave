@@ -109,6 +109,14 @@
 						<chrome.binary.path>${chrome.binary.path}</chrome.binary.path>
 						<test.suite.path>${test.suite.path}</test.suite.path>
 					</systemPropertyVariables>
+					<testResources>
+						<testResource>
+							<directory>src/test/java</directory>
+							<includes>
+								<include>**/*.scenario</include>
+							</includes>
+						</testResource>
+					</testResources>
 				</configuration>
 				<executions>
 					<execution>
