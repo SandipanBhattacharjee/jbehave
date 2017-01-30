@@ -12,11 +12,12 @@ import net.serenitybdd.jbehave.SerenityStories;
 public class AcceptanceTestSuite extends SerenityStories {
 	
 	
-	String path=System.getProperty("user.dir")+"//src//test//resources//chromedriver.exe";
+	//String path=System.getProperty("user.dir")+"//src//test//resources//chromedriver.exe";
 //	// String path=System.getProperty("user.dir")+"//src//test//resources//geckodriver.exe";
 //	 
 	//String stories="**/homeflow.story";
-	
+	String path=System.getProperty("user.dir")+"//src//test//resources//IEDriverServer.exe";
+
 	String stories="homeflow.story";
 	String testSuitePath=System.getProperty("user.dir")+"//src//test//resources//stories//testSuites//"+System.getProperty("test.suite.path");
 	
@@ -28,7 +29,7 @@ public class AcceptanceTestSuite extends SerenityStories {
 
 	
 	public void setFirefoxPath(){
-		System.setProperty("webdriver.chrome.driver",path);
+		System.setProperty("webdriver.ie.driver",path);
 	}
 	
 	private String parseTestSuiteFile_ReturnStoryNames(){ 	
